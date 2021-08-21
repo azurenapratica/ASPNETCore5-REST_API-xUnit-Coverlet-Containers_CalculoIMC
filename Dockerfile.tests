@@ -1,0 +1,16 @@
+FROM mcr.microsoft.com/dotnet/sdk:5.0.400 AS tests-env
+WORKDIR /
+
+# Copiar arquivos .csproj e restaurar dependencias
+COPY Calculos.Common/ ./Calculos.Common/
+COPY Calculos.Common.Tests/ ./Calculos.Common.Tests/
+RUN dotnet restore Calculos.Common.Tests/Calculos.Common.Tests.csproj
+
+# Copiar arquivo .sh para execução dos testes
+COPY tests-execution.sh ./tests-execution.sh
+
+# Instalar Global Tools do Coverlet 
+RUN dotnet tool install --global dotnet-reportgenerator-globaltool --version 4.8.12
+
+# Configurar execução do script para processamento dos testes
+ENTRYPOINT ["sh", "./tests-execution.sh"]

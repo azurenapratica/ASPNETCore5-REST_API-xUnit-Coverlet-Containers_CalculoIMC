@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31320.298
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "APICalculoIMC", "APICalculoIMC.csproj", "{F8BB2A07-87D5-4592-8E25-0C9F860352B6}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Calculos.Common", "..\Calculos.Common\Calculos.Common.csproj", "{1FBADE63-151F-4789-8B50-36F3BC34B29D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F8BB2A07-87D5-4592-8E25-0C9F860352B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F8BB2A07-87D5-4592-8E25-0C9F860352B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F8BB2A07-87D5-4592-8E25-0C9F860352B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F8BB2A07-87D5-4592-8E25-0C9F860352B6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1FBADE63-151F-4789-8B50-36F3BC34B29D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1FBADE63-151F-4789-8B50-36F3BC34B29D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1FBADE63-151F-4789-8B50-36F3BC34B29D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1FBADE63-151F-4789-8B50-36F3BC34B29D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8992A3D0-806D-4209-B676-3C9BC5B8F781}
+	EndGlobalSection
+EndGlobal
